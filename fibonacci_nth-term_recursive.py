@@ -17,6 +17,11 @@ def fibonacci(n):
 		return n
 	else:
 		return fibonacci(n-1) + fibonacci(n-2)
+	"""
+	Notice that this recursive method calls itself two times, not just one. This makes a huge difference in how the program will 
+	actually run on our computer. The number of calculations will explode when we increase the number of the Fibonacci number we want. 
+	To be more precise, the number of function calls will double every time we increase the Fibonacci number we want by one.
+	"""
 
 
 if __name__ == '__main__':
